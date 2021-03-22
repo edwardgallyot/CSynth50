@@ -1,4 +1,3 @@
-#include <pa_linux_alsa.h>
 #include "GUI.h"
 
 #define NUM_SECONDS (2)
