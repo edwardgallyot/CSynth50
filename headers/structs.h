@@ -1,6 +1,7 @@
 #include <porttime.h>
 #include <portmidi.h>
 #include <portaudio.h>
+#include <pa_mac_core.h>
 #include <stdlib.h>
 #include <gtk/gtk.h>
 

@@ -17,7 +17,7 @@ CSYNTH50LIB=`pkg-config --cflags --libs CSynth50`
 #linker
 
 LD=gcc
-LDFLAGS=$(CSYNTH50LIB) -export-dynamic
+LDFLAGS=$(CSYNTH50LIB)
 
 OBJS=	main.o
 
