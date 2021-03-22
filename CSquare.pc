@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib/x86_64-linux-gnu
+locallib=/usr/local/lib
+includedir=${prefix}/include
+targets=x11 broadway wayland
+
+gtk_binary_version=3.0.0
+gtk_host=x86_64-pc-linux-gnu
+
+Name: CSquare
+Description: CSquare CS50 Oscillator
+Version: 3.24.20
+Requires: gdk-3.0 atk >= 2.15.1 cairo >= 1.14.0 cairo-gobject >= 1.14.0 gdk-pixbuf-2.0 >= 2.30.0 gio-2.0 >= 2.57.2
+Requires.private: atk atk-bridge-2.0 wayland-client >= 1.14.91 wayland-protocols >= 1.14 xkbcommon >= 0.2.0 wayland-cursor >= 1.14.91 wayland-egl epoxy >= 1.4 fribidi >= 0.19.7 pangoft2 gio-unix-2.0 >= 2.57.2
+Libs: -L${locallib} -L${libdir} -lportaudio -lportmidi -lporttime -lportmidi_s -lgtk-3 -lm -lasound -lrt -lpthread -rdynamic
+Cflags: -I${includedir}/gtk-3.0
