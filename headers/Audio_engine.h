@@ -118,10 +118,11 @@ float oscillator(int change, int wave, float amp, float previous_freq, float fre
         // Ramp Down the changes in the oscilators to help mitigate jump discountinuitys
         if (c == 0)
         {
+            //Simple Analog Square Wave
             if (wave == 1)
                 sig = make_analog_square(amp, previous_freq, &s);
 
-            // Simple Square Wave
+            // Simple Digital Square Wave
             if (wave == 2)
                 sig = make_digital_square(amp, previous_freq, &s);
 
@@ -139,11 +140,13 @@ float oscillator(int change, int wave, float amp, float previous_freq, float fre
                 sig *= (((AUDIO_OUT_BUFFER_SIZE / 2) - 1) - (float)a) / ((AUDIO_OUT_BUFFER_SIZE / 2) - 1);
         }
         if (c == 1)
+        // Switch to the appropriate frequency and then ramp up
         {
+            //Simple Analog Square Wave
             if (wave == 1)
                 sig = make_analog_square(amp, freq, &s);
 
-            // Simple Square Wave
+            // Simple Digital Square Wave
             if (wave == 2)
                 sig = make_digital_square(amp, freq, &s);
 
@@ -164,10 +167,11 @@ float oscillator(int change, int wave, float amp, float previous_freq, float fre
 
     else
     {
+        //Simple Analog Square Wave
         if (wave == 1)
             sig = make_analog_square(amp, freq, &s);
 
-        // Simple Square Wave
+        // Simple Digital Square Wave
         if (wave == 2)
             sig = make_digital_square(amp, freq, &s);
 
