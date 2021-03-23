@@ -22,10 +22,11 @@ links in the Credits section.
 
 ### Linux 
 
-`git clone https://github.com/edwardgallyot/CSynth50.git`
-''' cd CSynth50 '''
-''' make '''
-''' ./main '''
+`git clone https://github.com/edwardgallyot/CSynth50.git`  
+` cd CSynth50 `    
+` make `    
+`./main`     
+
 
 Once the repo is cloned on your system the make command should be enough on a Linux System. In the Mac OS Catalina
 branch there is some slightly changed source code and a different makefile reflected portaudios dependencies
