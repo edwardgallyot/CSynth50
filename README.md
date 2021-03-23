@@ -5,6 +5,17 @@
 CSynth50 is my final project for HarvardX's CS50. I started this project as a way of teaching myself
 to program oscillators and envelopes as well as parse MIDI data into C.
 
+## Features
+
+Currently the Synth has these functions:
+
+* Four Oscillators: Digital Saw, Analog Saw, Digital Square and Analog Square
+* An Volume Envelope
+* A Global Volume Control
+
+I would love to add either an LFO section and/or a filter section to make this synth more powerful. If 
+anyone is interested in helping to add these features please get in touch.
+
 #### Goals of this Project
 
 * To help people like myself get into DSP and program Audio Apps through practical experimentation
