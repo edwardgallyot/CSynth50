@@ -22,7 +22,7 @@ links in the Credits section.
 
 ### Linux 
 
-''' git clone https://github.com/edwardgallyot/CSynth50.git '''
+`git clone https://github.com/edwardgallyot/CSynth50.git`
 ''' cd CSynth50 '''
 ''' make '''
 ''' ./main '''
