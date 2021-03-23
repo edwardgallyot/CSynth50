@@ -12,26 +12,6 @@ to program oscillators and envelopes as well as parse MIDI data into C.
 * To help people who are coming from beginner into intermediate with the C language experiment in a field of interest.
 * To aim for compatability on Linux and MAC OS
 
-
-#### Usage
-
-### Dependencies
-
-This project depends on PortMidi, PortAudio and GTK3. You should be able to install these by following the
-links in the Credits section.
-
-### Linux 
-
-`git clone https://github.com/edwardgallyot/CSynth50.git`  
-` cd CSynth50 `    
-` make `    
-`./main`     
-
-
-Once the repo is cloned on your system the make command should be enough on a Linux System. In the Mac OS Catalina
-branch there is some slightly changed source code and a different makefile reflected portaudios dependencies
-on Mac OS.
-
 #### Why C?
 
 Fundamentally I'm using C here for performance. I have tried to build similar apps in python and 
@@ -48,9 +28,30 @@ please feel free to get in touch with me.
 I'm also open to porting this project into either rust or C++ if there is anyone who can enlighten 
 me on how this would make the development easier. 
 
-#### Known Issues
+## Usage
 
-##### Jump Discontinuitys
+### Dependencies
+
+This project depends on PortMidi, PortAudio and GTK3. You should be able to install these by following the
+links in the Credits section.
+
+### Linux 
+
+Open up a terminal of your choice and run these commands.     
+      
+`git clone https://github.com/edwardgallyot/CSynth50.git`  
+` cd CSynth50 `    
+` make `    
+`./main`     
+
+
+Once the repo is cloned on your system the make command should be enough on a Linux System. In the Mac OS Catalina
+branch there is some slightly changed source code and a different makefile reflected portaudios dependencies
+on Mac OS.
+
+## Known Issues
+
+#### Jump Discontinuitys
 
 There seems to be some jump discontinuitys when changing frequencys. You can probably see in the oscillator
 function that I have tried to ommit these jump discontinuitys by fading down and ramping back up to switch
@@ -58,12 +59,12 @@ frequencys over a period of about 1ms or more accurately half the buffer size.
 
 If anyone has a better way of adressing jump discontinuitys I'd be open to any suggestions.
 
-##### The sin() function
+#### The sin() function
 
 Use of the sin() function is heavy on the cpu and unbounded in a realtime call back. I know this isn't ideal
 but my research on algorithms was inconclusive.
 
-##### Global Variables
+#### Global Variables
 
 I know the use of global variables is not ideal and at some point I know that it would be a good idea to pass pointers
 around as opposed to using globals.
