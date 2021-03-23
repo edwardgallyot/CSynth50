@@ -11,6 +11,6 @@ on my laptop and the library transfered over from Linux with ease.
 
 You can find the PortAudio Library along with it's great docs here:
 
-[Caption](http://www.portaudio.com/)
+[PortAudio](http://www.portaudio.com/)
 
 
