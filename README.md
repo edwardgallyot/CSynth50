@@ -1,13 +1,16 @@
 # CSynth50
 ## Video Demo
+
+
+
 ## Description
 
 CSynth50 is my final project for HarvardX's CS50. I started this project as a way of teaching myself
 to program oscillators and envelopes as well as parse MIDI data into C.
 
-## Features
+#### Features
 
-Currently the Synth has these functions:
+Currently CSynth50 has these functions:
 
 * Four Oscillators: Digital Saw, Analog Saw, Digital Square and Analog Square
 * An Volume Envelope
@@ -25,7 +28,7 @@ anyone is interested in helping to add these features please get in touch.
 
 #### Why C?
 
-Fundamentally I'm using C here for performance. I have tried to build similar apps in python and 
+Fundamentally, I'm using C here for performance. I have tried to build similar apps in python and 
 there is no way of effectively working with anything realtime.
 
 I chose to use C and the librarys I have added in the credits section because it is the language 
@@ -74,6 +77,8 @@ If anyone has a better way of adressing jump discontinuitys I'd be open to any s
 
 Use of the sin() function is heavy on the cpu and unbounded in a realtime call back. I know this isn't ideal
 but my research on algorithms was inconclusive.
+
+#### 
 
 #### Global Variables
 
