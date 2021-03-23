@@ -8,7 +8,7 @@
 CSynth50 is my final project for HarvardX's CS50. I started this project as a way of teaching myself
 to program oscillators and envelopes as well as parse MIDI data into C.
 
-#### Features
+### Features
 
 Currently CSynth50 has these functions:
 
@@ -19,14 +19,14 @@ Currently CSynth50 has these functions:
 I would love to add either an LFO section and/or a filter section to make this synth more powerful. If 
 anyone is interested in helping to add these features please get in touch.
 
-#### Goals of this Project
+### Goals of this Project
 
 * To help people like myself get into DSP and program Audio Apps through practical experimentation
 * To create a somewhat working and useable audio app even if the program conventions aren't always the greatest.
 * To help people who are coming from beginner into intermediate with the C language experiment in a field of interest.
 * To aim for compatability on Linux and MAC OS
 
-#### Why C?
+### Why C?
 
 Fundamentally, I'm using C here for performance. I have tried to build similar apps in python and 
 there is no way of effectively working with anything realtime.
@@ -65,7 +65,7 @@ on Mac OS.
 
 ## Known Issues
 
-#### Jump Discontinuitys
+### Jump Discontinuitys
 
 There seems to be some jump discontinuitys when changing frequencys. You can probably see in the oscillator
 function that I have tried to ommit these jump discontinuitys by fading down and ramping back up to switch
@@ -73,12 +73,15 @@ frequencys over a period of about 1ms or more accurately half the buffer size.
 
 If anyone has a better way of adressing jump discontinuitys I'd be open to any suggestions.
 
-#### The sin() function
+### The sin() function
 
 Use of the sin() function is heavy on the cpu and unbounded in a realtime call back. I know this isn't ideal
 but my research on algorithms was inconclusive.
 
-#### 
+### Glitching on Mac OS 
+
+The GUI is currently very glitchy on catalina. I think this is something to do with GTK3 being installed via 
+brew on my laptop.
 
 #### Global Variables
 
@@ -87,7 +90,7 @@ around as opposed to using globals.
 
 ## Credits
 
-#### The PortAudio Library
+### The PortAudio Library
 
 The Port Audio Library and its documentation has made this final project possible
 and (more importantly) portable. There is a branch that I have created to support Mac OS Catalina
@@ -95,7 +98,7 @@ on my laptop and the library transfered over from Linux with ease.
 
 You can find the PortAudio Library along with it's great docs [here](http://www.portaudio.com/)
 
-#### The PortMidi Library
+### The PortMidi Library
 
 The portmidi library I believe is part of portmedia as is portaudio and has examples in on their
 git hub and although it takes some time to get comfortable with the way the port time callback works, 
@@ -103,7 +106,7 @@ I have some projects that I can share with anyone who needs a simpler way of tes
 
 The PortMedia API information can be found [here](http://portmedia.sourceforge.net/)
 
-#### The GTK Library
+### The GTK Library
 
 The GTK Library was very quick and easy to implement with Glade as I could use the GTK builder
 to link functions in C and CSS styles to the functionality of widgets. The reason I chose GTK was
@@ -112,6 +115,14 @@ should be portable to any system that supports it.
 
 More Info on GTK and Glade can be found [here](https://www.gtk.org/)
 
-#### Great Online Resources
+### Great Online Resources
+
+Although it is impossible to credit a million stack overflow posts here are a couple of great 
+online resources that deserve huge credit.      
+
+[Here is a great resource for learning glade](https://prognotes.net/gtk-glade-c-programming/)    
+
+[Here is a great resource for the basics of my oscillator functions](https://www.youtube.com/watch?v=tgamhuQnOkM)     
+
 
 
