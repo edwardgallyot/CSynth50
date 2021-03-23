@@ -1,3 +1,6 @@
 # CSynth50
 #### Video Demo: 
-#### Description: 
+#### Description:
+#### Credits:
+
+###### The PortAudio Library:
